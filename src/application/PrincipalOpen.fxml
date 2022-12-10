@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--  CTRL +3  -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <TextField fx:id="tfCodigoVaga" layoutX="26.0" layoutY="198.0" prefHeight="24.0" prefWidth="286.0" promptText="Pesquisar" />
+      <VBox layoutX="510.0" layoutY="10.0" prefHeight="624.0" prefWidth="137.0" style="-fx-background-color: #A1E9ED;">
+         <children>
+            <Pane prefHeight="176.0" prefWidth="134.0">
+               <children>
+                  <Button layoutY="99.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="137.0" style="-fx-background-color: #75B3FF;" text="Home">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnswitchLogin" layoutY="144.0" mnemonicParsing="false" onAction="#switchLogin" prefHeight="32.0" prefWidth="137.0" style="-fx-background-color: #75B3FF;" text="TELA LOGIN" />
+               </children>
+            </Pane>
+            <Separator prefHeight="11.0" prefWidth="137.0" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="137.0" style="-fx-background-color: #75B3FF;" text="Home">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #75B3FF;" text="Categorias">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #75B3FF;" text="Tecnologia">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #75B3FF;" text="Cozinha">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #75B3FF;" text="Comércio">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #75B3FF;" text="Industria">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #75B3FF;" text="Saúde">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #75B3FF;" text="Transportes">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <TextArea fx:id="taListaVaga" layoutX="25.0" layoutY="339.0" prefHeight="108.0" prefWidth="417.0" promptText="Descrição da Vaga" />
+      <Label fx:id="myLabel" layoutX="26.0" layoutY="246.0" text="Categoria">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCarrega" layoutX="364.0" layoutY="198.0" mnemonicParsing="false" onAction="#carrega" text="Pesquisar" />
+      <Label fx:id="myTitulo" layoutX="25.0" layoutY="296.0" text="Titulo">
+         <font>
+            <Font size="17.0" />
+         </font>     
+      </Label>
+         
+      <Label fx:id="myDesc" layoutX="36.0" layoutY="414.0" text="...">
+         <font>
+            <Font size="14.0" />
+         </font>>
+      </Label>
+      <AnchorPane layoutX="1.0" prefHeight="108.0" prefWidth="647.0" style="-fx-background-color: #75B3FF;">
+         <children>
+            <Label layoutX="247.0" layoutY="28.0" text="Open Jobs">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

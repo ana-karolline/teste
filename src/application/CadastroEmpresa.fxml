@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Label layoutX="14.0" layoutY="94.0" text="Cadastro da Empresa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="16.0" layoutY="208.0" prefHeight="24.0" prefWidth="146.0" promptText="CNPJ" />
+      <TextField layoutX="14.0" layoutY="126.0" prefHeight="24.0" prefWidth="339.0" promptText="Nome da Empresa" />
+      <TextField layoutX="15.0" layoutY="248.0" promptText="Senha" />
+      <AnchorPane prefHeight="94.0" prefWidth="600.0" style="-fx-background-color: #75B3FF;">
+         <children>
+            <Button layoutY="68.0" mnemonicParsing="false" onAction="#switchPrincipalOpen" style="-fx-background-color: #75B3FF;" text="Menu Principal" />
+            <Button layoutX="96.0" layoutY="68.0" mnemonicParsing="false" onAction="#switchLogin" style="-fx-background-color: #75B3FF;" text="Login" />
+            <Button layoutX="142.0" layoutY="68.0" mnemonicParsing="false" onAction="#switchCadastroEmpresa" style="-fx-background-color: #75B3FF;" text="Sou Empresa" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="425.0" layoutY="32.0" text="OpenJobs">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField layoutX="14.0" layoutY="168.0" prefHeight="24.0" prefWidth="339.0" promptText="E-mail Corporativo" />
+      <TextField layoutX="15.0" layoutY="286.0" promptText="Confirmar Senha" />
+      <Button layoutX="16.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchPerfilEmpresa" style="-fx-background-color: #75B3FF;" text="Registrar" />
+   </children>
+</AnchorPane>
